@@ -128,7 +128,7 @@
     Add a Database Cartridge to your appliacation to see what tables it contains.
   </p>
   <pre>
-    rhc cartridge add postgresql-8.4 -a 'APP_NAME'
+    rhc cartridge add postgresql-8.4 -a <%System.getenv("OPENSHIFT_APP_NAME");%>
   </pre>
 </body>
 </html>

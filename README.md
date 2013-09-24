@@ -1,4 +1,3 @@
-Tomcat_Example
-==============
+The OpenShift `jbossews` cartridge documentation can be found at:
 
-Example Tomcat application demonstrating how to connect to data sources.
+https://github.com/openshift/origin-server/tree/master/cartridges/openshift-origin-cartridge-jbossews/README.md

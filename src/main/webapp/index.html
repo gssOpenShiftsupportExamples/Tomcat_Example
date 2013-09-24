@@ -30,7 +30,7 @@
     -webkit-text-shadow: 2px 2px 2px black;
     text-shadow: -1px -1px 0 black;
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
-    background: #CC0000;
+    background: #336699;
     width: 22.5em;
     margin: 1em -2em;
     padding: .3em 0 .3em 1.5em;
@@ -122,44 +122,13 @@
     <div class="brand-text"><strong>Open</strong>Shift</div>
   </a>
   <h1>
-    Welcome to OpenShift, JBossEWS (Apache/Tomcat) Cartridge
+    JBossEWS (Apache/Tomcat) Example
   </h1>
   <p>
-    Place your application here
-  </p>
-  <p>
-    In order to commit to your new project, go to your projects git repo  (created with the rhc app create command) directory.
-  </p>
-  <p>
-    For example, if you named your application myfirstapp (by passing in -a myfirstapp to the rhc app create command),
-      you would find the contents of this app located under myfirstapp/src/main/webapp. You can edit that and push your
-      changes from the myfirstapp directory by running:
+    Add a Database Cartridge to your appliacation to see what tables it contains.
   </p>
   <pre>
-    git commit -a -m 'Some commit message'
-    git push
+    rhc cartridge add postgresql-8.4 -a 'APP_NAME'
   </pre>
-  <p>
-    Then reload this page.
-  </p>
-  <p>See the README.md file in the application Git repository for more information on the options for deploying applications.</p>
-
-<h2>Debugging</h2>
-<p>View debugging information about the server environment including memory pools by loading this JSP page: <a href="snoop.jsp">Debug</a></p>
-
-  <h2>
-    What's next?
-  </h2>
-  <ul>
-    <li>
-      Why not visit us at <a href="http://www.openshift.com">http://www.openshift.com</a>, or
-    </li>
-    <li>
-      You could get help in the <a href="http://www.openshift.com/forums/openshift">OpenShift forums</a>, or
-    </li>
-    <li>
-      You're welcome to come chat with us in our IRC channel at #openshift on freenode.net
-    </li>
-  </ul>
 </body>
 </html>

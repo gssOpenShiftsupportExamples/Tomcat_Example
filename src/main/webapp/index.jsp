@@ -148,8 +148,6 @@
     mysql <%= System.getenv("OPENSHIFT_APP_NAME")%> -e "CREATE TABLE example (id INT, data VARCHAR(100));"
   </pre>
 
-  </br>
-
   <p>
     Keep in mind that if you can only have 1 Database Cartidge installed at a time. So you may have to remove a cartridge with. 
   </p>

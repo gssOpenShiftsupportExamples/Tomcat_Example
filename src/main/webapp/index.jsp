@@ -141,6 +141,15 @@
   </pre>
 
   <p>
+    There Typicaly when you just add the MySQL Database there are not tables in your <%= System.getenv("OPENSHIFT_APP_NAME")%> database, so you may need to add one or two, in oreder for the <a href="/MySQLServlet">tables</a> example to show you any information. 
+  </p>
+  <pre>
+    rhc ssh <%= System.getenv("OPENSHIFT_APP_NAME")%>; mysql <%= System.getenv("OPENSHIFT_APP_NAME")%> -e "CREATE TABLE example2 (id INT, data VARCHAR(100));"
+  </pre>
+
+  </br>
+
+  <p>
     Keep in mind that if you can only have 1 Database Cartidge installed at a time. So you may have to remove a cartridge with. 
   </p>
   <pre>

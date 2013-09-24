@@ -146,7 +146,7 @@
   <pre>
     rhc cartridge remove postgresql-8.4 -a <%= System.getenv("OPENSHIFT_APP_NAME")%>
   </pre>
-  <p>OR</p>
+  <p align="center">OR</p>
   <pre>
     rhc cartridge remove mysql-5.1 -a <%= System.getenv("OPENSHIFT_APP_NAME")%>
   </pre>

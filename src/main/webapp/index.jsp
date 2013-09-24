@@ -127,10 +127,29 @@
     JBossEWS (Apache/Tomcat) Example
   </h1>
   <p>
-    Add a Database Cartridge to your appliacation to see what tables it contains.
+    Try adding the PostgresSQL Database Cartridge to your appliacation to see what <a href="/PostgresServlet">tables</a> it contains.
   </p>
   <pre>
     rhc cartridge add postgresql-8.4 -a <%= System.getenv("OPENSHIFT_APP_NAME")%>
   </pre>
+
+  <p>
+    Try adding the MySQL Database Cartridge to your appliacation to see what <a href="/MySQLServlet">tables</a> it contains.
+  </p>
+  <pre>
+    rhc cartridge add mysql-5.1 -a <%= System.getenv("OPENSHIFT_APP_NAME")%>
+  </pre>
+
+  <p>
+    Keep in mind that if you can only have 1 Database Cartidge installed at a time. So you may have to remove a cartridge with. 
+  </p>
+  <pre>
+    rhc cartridge remove postgresql-8.4 -a <%= System.getenv("OPENSHIFT_APP_NAME")%>
+  </pre>
+  <p>OR</p>
+  <pre>
+    rhc cartridge remove mysql-5.1 -a <%= System.getenv("OPENSHIFT_APP_NAME")%>
+  </pre>
+
 </body>
 </html>

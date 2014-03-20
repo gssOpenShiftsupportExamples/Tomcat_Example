@@ -30,6 +30,10 @@
     <url-pattern>/MySQLServlet</url-pattern>
   </servlet-mapping>
 
+  <listener>
+    <listener-class>main.java.SimpleListener</listener-class>
+  </listener>
+
   <servlet>
     <servlet-name>PostgresServlet</servlet-name>
     <servlet-class>main.java.PostgresServlet</servlet-class>
